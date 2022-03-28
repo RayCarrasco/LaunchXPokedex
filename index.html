@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/grid_view.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <title>pokedex</title>
+  </head>
+
+  <body>
+    <div>
+      <div class="container">
+        <img src="img/pokedex.png" class="pokedex" />
+        <div class="screen_pokemon">
+          <img
+            src="img/black.png"
+            alt="pokeball"
+            id="pokemon_image"
+            class="pokemon_image"
+          />
+        </div>
+        <div class="search_container">
+          <input
+            type="text"
+            placeholder="Nombre"
+            id="pokemon_input_name"
+            name="poke_name"
+          />
+        </div>
+
+        <div class="info">
+          <label class="info_pokemon">
+            <div class="basic_info">
+              <div class="row">
+                <div class="name_text">
+                  <p id="name"></p>
+                </div>
+              </div>
+              <div class="row" style="text-align: center">
+                <div class="data_info">
+                  <p id="atk" class="inline"></p>
+                </div>
+                <div class="data_info">
+                  <p id="def" class="inline"></p>
+                </div>
+              </div>
+              <div class="row" style="text-align: center">
+                <div class="data_info">
+                  <p id="hp" class="inline"></p>
+                </div>
+                <div class="data_info">
+                  <p id="speed" class="inline"></p>
+                </div>
+              </div>
+            </div>
+          </label>
+          <label class="type">
+            <p id="type">Tipo:</p>
+          </label>
+          <label class="type_info">
+            <p id="type_info"></p>
+          </label>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <script src="js/engine.js"></script>
+  </footer>
+</html>
